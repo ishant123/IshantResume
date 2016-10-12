@@ -13,7 +13,7 @@ var transporter = nodemailer.createTransport("SMTP", {
         pass: "ISHANT123"
     }
 });
-var port = 443;
+var port = 80;
 
 app.use(express.static('public'));
 app.use(express.static('views/src'));
