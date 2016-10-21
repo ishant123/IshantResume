@@ -24,7 +24,7 @@ app.listen(port,function(error){
 
 });
 app.get('/',function(req,res){
-   res.sendFile(path.join(__dirname+'/index.html'));
+   res.sendFile('public/index.html'));
 });
 
 app.post('/sendEmail',upload.array(),function(req,res){
