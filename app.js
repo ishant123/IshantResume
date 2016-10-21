@@ -24,7 +24,7 @@ app.listen(port,function(error){
 
 });
 app.get('/',function(req,res){
-    res.redirect('public/index.html');
+  return res.redirect('public/index.html');
 });
 
 app.post('/sendEmail',upload.array(),function(req,res){
